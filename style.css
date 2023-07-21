@@ -1,0 +1,165 @@
+:root {
+
+    --cor--principal : #862B0D;
+    --cor--secundaria : #FFF9C9;
+    --cor--terciaria : #FFC95F;
+
+    --fonte--primaria : 'VT323', monospace;
+    --fonte--secundaria : 'Black Ops One', cursive;
+}
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    box-sizing: border-box;
+    background-color: var(--cor--principal);
+    color: var(--cor--secundaria);
+}
+
+.cabecalho {
+
+    padding: 2% 0 0 15% ;
+}
+
+.cabecalho__menu { 
+
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+
+    font-family: var(--fonte--secundaria);
+    font-size: 1.5rem;
+    color: var(--cor--secundaria);
+    text-decoration: none;
+}
+
+.flexbox {
+
+    padding: 5% 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+
+}
+
+.flexbox__caixadetexto{
+    
+    width: 50%;
+    display : flex;
+    flex-direction: column;
+    gap: 10px;;
+}
+
+.flexbox__caixadetexto__título{
+
+    font-size: 2.25REM;
+    font-family: var(--fonte--secundaria);
+
+}
+
+.titulo__destacado { 
+    
+    color: var(--cor--terciaria);
+
+}
+
+.flexbox__caixadetexto__paragrafo{
+
+    font-size: 1.5rem;    
+    font-family: var(--fonte--primaria);    
+
+}
+
+.flexbox__redes{
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items :center;
+    gap : 32px
+}
+
+.flexbox__redes__titulo { 
+
+    font-size : 1.87rem;
+    font-family: var(--fonte--primaria);
+}
+.flexbox__botoes {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 65%;
+    text-align: center;
+    border-radius: 8px;
+    border : 3px solid var(--cor--secundaria);
+    font-size : 1.75rem;
+    padding: 16px 0 ;
+    text-decoration : none;
+    color : var(--cor--terciaria);
+    font-family: 'VT323', monospace;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.flexbox__botoes:hover {
+
+    background-color :var(--cor--secundaria);
+
+}
+
+.flexbox__imagem__principal {
+
+    width: 50%;
+}
+
+.rodape { 
+    
+    background-color : var(--cor--terciaria);
+    padding: 24px;
+    color: var(--cor--secundaria);
+    text-align: center;
+    font-size: 1.87rem;
+    font-family: var(--fonte--secundaria);
+
+    
+}
+
+@media (max-width: 600px) {
+
+    .flexbox{
+
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .flexbox__caixadetexto {
+
+        width: auto;
+    }
+
+    .cabecalho{
+
+        padding: 8%;
+    }
+
+    .cabecalho__menu{
+
+        justify-content: center;
+    }
+
+    .flexbox__imagem__principal {
+
+        width: 95%;
+    }
+}
